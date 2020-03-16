@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Monochrome | A minimal, responsive Jekyll blog theme</title>
+ <title>Painbird | A Dev log</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <id>http://localhost:4000</id>
- <updated>2020-03-16T16:02:55+09:00</updated>
+ <updated>2020-03-16T17:15:05+09:00</updated>
  <author>
-   <name>The Review Index</name>
-   <uri>https://thereviewindex.com</uri>
-   <email>dyutibarma@gmail.com</email>
+   <name>HyeongJin</name>
+   <uri>https://painbird.github.io</uri>
+   <email>painbirdz@gmail.com</email>
  </author>
+
+ 
+
+ <entry>
+   <title>github.io start</title>
+   <link href="http://localhost:4000/new-post"/>
+   <id>http://localhost:4000/new-post</id>
+   <updated>2020-03-16T17:12:00+09:00</updated>
+   <content type="html">&lt;p&gt;GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.
+GitHub Blog 서비스의 이름은 Pages이다.&lt;/p&gt;
+
+&lt;p&gt;Pages가 다른 블로그 플랫폼 보다 편한 것 같아서 마음에 든다.
+다른 사람들도 같이 많이 사용했으면 좋겠다는 생각이 든다.&lt;/p&gt;
+
+&lt;p&gt;YFM에서 정의한 제목을 이중 괄호 구문으로 본문에 추가할 수 있다.
+이 글의 제목은 github.io start이고
+마지막으로 수정된 시간은 이다.&lt;/p&gt;
+</content>
+ </entry>
 
  
 
@@ -97,16 +116,6 @@
    <title>This is the third test post.</title>
    <link href="http://localhost:4000/test-post-3"/>
    <id>http://localhost:4000/test-post-3</id>
-   <updated>2017-02-11T00:00:00+09:00</updated>
-   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</content>
- </entry>
-
- 
-
- <entry>
-   <title>This is second test post.</title>
-   <link href="http://localhost:4000/test-post-2"/>
-   <id>http://localhost:4000/test-post-2</id>
    <updated>2017-02-11T00:00:00+09:00</updated>
    <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</content>
  </entry>

@@ -1,20 +1,32 @@
 # Site settings
-title: Monochrome | A minimal, responsive Jekyll blog theme
-description: "A minimal, responsive, ready to use blog template, built with Jekyll."
-url: "http://www.dyutibarma.github.io/monochrome"
+title: Painbird | A Dev log
+description: "Web App Project."
+url: "https://painbird.github.io"
 author:
-  name: "The Review Index"
-  email: "dyutibarma@gmail.com"
-  url: "https://thereviewindex.com"
+  name: "HyeongJin"
+  email: "painbirdz@gmail.com"
+  url: "https://painbird.github.io"
 
 # Build settings
-baseurl: /monochrome # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
-permalink: /:title
-paginate: 8
-paginate_path: /page:num/
+
+#permalink: /:title
+#paginate: 8
+#paginate_path: /page:num/
+
+# Paginate config
+pagination:
+  enabled: true
+  per_page: 8
+  sort_reverse: true
+  title: ':title'
+  permalink: '/page:num'
+  trail: 
+    before: 1
+    after: 1
 
 # Default values
 defaults:
@@ -27,7 +39,7 @@ defaults:
 
 # Plugins
 gems:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
 
 # Custom variables
