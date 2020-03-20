@@ -50,10 +50,10 @@ summary:
 > OS : 자유
 > 부팅디스크 유형 : 표준 영구 디스크 / 30GB
 
-
+![](https://i.postimg.cc/Kv6XkDxh/gcp3.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMTczMjM4MSw2MTA1NTM2MjgsLTU3NT
-E3NjIwMSw0NDg1OTM1NjMsMzg2ODc3NjI2LDIwMzg2MjQ3MDhd
-fQ==
+eyJoaXN0b3J5IjpbLTU3NDQyNDgxNCwyMTAxNzMyMzgxLDYxMD
+U1MzYyOCwtNTc1MTc2MjAxLDQ0ODU5MzU2MywzODY4Nzc2MjYs
+MjAzODYyNDcwOF19
 -->
