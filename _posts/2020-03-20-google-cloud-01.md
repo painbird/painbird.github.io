@@ -39,10 +39,10 @@ summary:
 ![enter image description here](https://i.postimg.cc/BbzrCxFD/gcp1.png)
 
 - 메뉴 고정
-![](https://i.postimg.cc/SRj08Znk/gcp2.png){:height="50%" width="50%"}
+![](https://i.postimg.cc/SRj08Znk/gcp2.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg2ODc3NjI2LDQ0ODU5MzU2MywyMDM4Nj
-I0NzA4XX0=
+eyJoaXN0b3J5IjpbNDQ4NTkzNTYzLDM4Njg3NzYyNiw0NDg1OT
+M1NjMsMjAzODYyNDcwOF19
 -->
