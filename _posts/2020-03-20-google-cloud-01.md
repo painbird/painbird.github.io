@@ -31,18 +31,17 @@ summary:
 - Google Cloud Shell(무제한, 영속 스토리지 5GB 붙음)  
 
 
-
-## 1. GCP 계정 생성 (Credit 카드 인증)
-
+#### 1. GCP 계정 생성 (Credit 카드 인증)
 <https://cloud.google.com/>
-
 1년 $300 크레딧  
 
 - 프로젝트명 변경 - "프로젝트 설정"  
-<img src="https://i.postimg.cc/BbzrCxFD/gcp1.png" style="zoom:75%;" />
+![enter image description here](https://i.postimg.cc/BbzrCxFD/gcp1.png)
 
 - 메뉴 고정
 ![](https://i.postimg.cc/SRj08Znk/gcp2.png)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0OTIzMjE4MiwyMDM4NjI0NzA4XX0=
+eyJoaXN0b3J5IjpbNDQ4NTkzNTYzLDIwMzg2MjQ3MDhdfQ==
 -->
