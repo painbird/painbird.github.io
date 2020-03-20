@@ -32,7 +32,7 @@ summary:
 
 
 #### 1. GCP 계정 생성 (Credit 카드 인증)
-(https://cloud.google.com)
+[https://cloud.google.com]()
 1년 $300 크레딧  
 
 - 프로젝트명 변경 - "프로젝트 설정"  
@@ -42,7 +42,7 @@ summary:
 ![](https://i.postimg.cc/SRj08Znk/gcp2.png)
 
 ### 2. 평생무료 VM 인스턴스
-무료 설정 기준 -  [https://cloud.google.com/free/docs/gcp-free-tier?hl=ko#always-free-usage-limits](https://cloud.google.com/free/docs/gcp-free-tier?hl=ko#always-free-usage-limits)  
+무료 설정 기준 -  [https://cloud.google.com/free/docs/gcp-free-tier?hl=ko#always-free-usage-limits]()  
 
 > 리전 : 오리건, 아이오와, 사우스캐롤라이나
 > 영역 : 리전 선택 후 자유
@@ -53,7 +53,7 @@ summary:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5Mzk1MzMsNjEwNTUzNjI4LC01NzUxNz
-YyMDEsNDQ4NTkzNTYzLDM4Njg3NzYyNiwyMDM4NjI0NzA4XX0=
-
+eyJoaXN0b3J5IjpbMjEwMTczMjM4MSw2MTA1NTM2MjgsLTU3NT
+E3NjIwMSw0NDg1OTM1NjMsMzg2ODc3NjI2LDIwMzg2MjQ3MDhd
+fQ==
 -->
