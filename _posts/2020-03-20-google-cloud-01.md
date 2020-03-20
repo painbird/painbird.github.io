@@ -42,7 +42,9 @@ summary:
 ![](https://i.postimg.cc/SRj08Znk/gcp2.png)
 
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ4NTkzNTYzLDM4Njg3NzYyNiw0NDg1OT
-M1NjMsMjAzODYyNDcwOF19
+eyJoaXN0b3J5IjpbLTU3NTE3NjIwMSw0NDg1OTM1NjMsMzg2OD
+c3NjI2LDIwMzg2MjQ3MDhdfQ==
 -->
