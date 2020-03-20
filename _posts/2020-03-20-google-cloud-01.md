@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Google Cloud Platform 영구 무료 서버
-date: 2020-03-20 16:59
-category: 
-author: 
+date: '2020-03-20 16:59'
+category: null
+author: null
 tags: []
-summary: 
+summary: null
+published: false
 ---
 
-#### Google Cloud Platform의 15개 서비스를 영구 무료 한도를 제공
+### Google Cloud Platform의 15개 서비스를 영구 무료 한도를 제공
 
 구글은 2017년 3월 10일 Google Cloud Next 17의 3일째 기조 강연에서 15개 서비스의 영구 무료 쿼터를 발표.
-
 영구 무료 한도 대상 서비스 이름과 월 제한은 다음과 같다(제품에 따라서는 아래 외에도 제한이 있다).
 
 - Google Cloud Engine(미국 지역의 f1-micro 1 인스턴스 및 HDD 30GB)  
@@ -36,10 +36,10 @@ summary:
 1년 $300 크레딧  
 
 - 프로젝트명 변경 - "프로젝트 설정"  
-![](https://i.postimg.cc/BbzrCxFD/gcp1.png)
+![](https://i.postimg.cc/BbzrCxFD/gcp1.png){ width=90% }
 
 - 메뉴 고정
-![](https://i.postimg.cc/SRj08Znk/gcp2.png)
+![](https://i.postimg.cc/SRj08Znk/gcp2.png){ width=50% }
 
 ### 2. 평생무료 VM 인스턴스
 무료 설정 기준 -  [https://cloud.google.com/free/docs/gcp-free-tier?hl=ko#always-free-usage-limits]()  
@@ -50,10 +50,5 @@ summary:
 > OS : 자유
 > 부팅디스크 유형 : 표준 영구 디스크 / 30GB
 
-![](https://i.postimg.cc/Kv6XkDxh/gcp3.png)
+![](https://i.postimg.cc/Kv6XkDxh/gcp3.png){ width=90% }
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NDQyNDgxNCwyMTAxNzMyMzgxLDYxMD
-U1MzYyOCwtNTc1MTc2MjAxLDQ0ODU5MzU2MywzODY4Nzc2MjYs
-MjAzODYyNDcwOF19
--->
