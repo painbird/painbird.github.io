@@ -32,7 +32,7 @@ summary:
 
 
 
-1. ###### GCP 계정 생성 (Credit 카드 인증)  
+## 1. GCP 계정 생성 (Credit 카드 인증)
 
 <https://cloud.google.com/>
 
@@ -41,3 +41,6 @@ summary:
 - 프로젝트명 변경 - "프로젝트 설정"  
 
 <img src="https://i.postimg.cc/BbzrCxFD/gcp1.png" style="zoom:75%;" />
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjAzODYyNDcwOF19
+-->
