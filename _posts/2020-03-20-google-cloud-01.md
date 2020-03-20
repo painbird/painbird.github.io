@@ -39,8 +39,10 @@ summary:
 1년 $300 크레딧  
 
 - 프로젝트명 변경 - "프로젝트 설정"  
-
 <img src="https://i.postimg.cc/BbzrCxFD/gcp1.png" style="zoom:75%;" />
+
+- 메뉴 고정
+![](https://i.postimg.cc/SRj08Znk/gcp2.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzODYyNDcwOF19
+eyJoaXN0b3J5IjpbMTE0OTIzMjE4MiwyMDM4NjI0NzA4XX0=
 -->
