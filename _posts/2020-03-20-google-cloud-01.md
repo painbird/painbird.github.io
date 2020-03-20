@@ -32,7 +32,7 @@ summary:
 
 
 #### 1. GCP 계정 생성 (Credit 카드 인증)
-<https://cloud.google.com/>
+(https://cloud.google.com)
 1년 $300 크레딧  
 
 - 프로젝트명 변경 - "프로젝트 설정"  
@@ -53,7 +53,7 @@ summary:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NTIwNjA3MSw2MTA1NTM2MjgsLTU3NT
-E3NjIwMSw0NDg1OTM1NjMsMzg2ODc3NjI2LDIwMzg2MjQ3MDhd
-fQ==
+eyJoaXN0b3J5IjpbODY5Mzk1MzMsNjEwNTUzNjI4LC01NzUxNz
+YyMDEsNDQ4NTkzNTYzLDM4Njg3NzYyNiwyMDM4NjI0NzA4XX0=
+
 -->
