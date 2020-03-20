@@ -41,10 +41,18 @@ summary:
 - 메뉴 고정
 ![](https://i.postimg.cc/SRj08Znk/gcp2.png)
 
+### 2. 평생무료 VM 인스턴스
 
+무료 설정 기준 -  [https://cloud.google.com/free/docs/gcp-free-tier?hl=ko#always-free-usage-limits](https://cloud.google.com/free/docs/gcp-free-tier?hl=ko#always-free-usage-limits)  
+
+리전 : 오리건, 아이오와, 사우스캐롤라이나
+영역 : 리전 선택 후 자유
+머신 : N1 시리즈 f1-micro
+OS : 자유
+부팅디스크 유형 : 표준 영구 디스크 / 30GB
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTE3NjIwMSw0NDg1OTM1NjMsMzg2OD
-c3NjI2LDIwMzg2MjQ3MDhdfQ==
+eyJoaXN0b3J5IjpbODU4MTkyNjUyLC01NzUxNzYyMDEsNDQ4NT
+kzNTYzLDM4Njg3NzYyNiwyMDM4NjI0NzA4XX0=
 -->
