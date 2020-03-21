@@ -4,7 +4,7 @@
  <title>Painbird | A Dev log</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <id>http://localhost:4000</id>
- <updated>2020-03-20T18:00:38+09:00</updated>
+ <updated>2020-03-21T11:49:57+09:00</updated>
  <author>
    <name>HyeongJin</name>
    <uri>https://painbird.github.io</uri>
@@ -17,8 +17,8 @@
    <title>Google Cloud Platform 영구 무료 서버</title>
    <link href="http://localhost:4000/google-cloud-01"/>
    <id>http://localhost:4000/google-cloud-01</id>
-   <updated>2020-03-20T16:59:00+09:00</updated>
-   <content type="html">&lt;h4 id=&quot;google-cloud-platform의-15개-서비스를-영구-무료-한도를-제공&quot;&gt;Google Cloud Platform의 15개 서비스를 영구 무료 한도를 제공&lt;/h4&gt; &lt;p&gt;구글은 2017년 3월 10일 Google Cloud Next 17의 3일째 기조 강연에서 15개 서비스의 영구 무료 쿼터를 발표.&lt;/p&gt; &lt;p&gt;영구 무료 한도 대상 서비스 이름과 월 제한은 다음과 같다(제품에 따라서는 아래 외에도 제한이 있다).&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Google Cloud Engine(미국 지역의 f1-micro 1 인스턴스...</content>
+   <updated>2020-03-20T00:00:00+09:00</updated>
+   <content type="html">&lt;h4 id=&quot;google-cloud-platform의-15개-서비스를-영구-무료-한도를-제공&quot;&gt;Google Cloud Platform의 15개 서비스를 영구 무료 한도를 제공&lt;/h4&gt; &lt;p&gt;구글은 2017년 3월 10일 Google Cloud Next 17의 3일째 기조 강연에서 15개 서비스의 영구 무료 쿼터를 발표. 영구 무료 한도 대상 서비스 이름과 월 제한은 다음과 같다(제품에 따라서는 아래 외에도 제한이 있다).&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Google Cloud Engine(미국 지역의 f1-micro 1 인스턴스...</content>
  </entry>
 
  

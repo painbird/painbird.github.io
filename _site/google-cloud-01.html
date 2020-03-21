@@ -129,14 +129,13 @@
 
 			<article id="post-page">
 	<h2>Google Cloud Platform 영구 무료 서버</h2>		
-	<time datetime="2020-03-20T16:59:00+09:00" class="by-line">20 Mar 2020</time>
+	<time datetime="2020-03-20T00:00:00+09:00" class="by-line">20 Mar 2020</time>
 	<div class="content">
 
 		<h4 id="google-cloud-platform의-15개-서비스를-영구-무료-한도를-제공">Google Cloud Platform의 15개 서비스를 영구 무료 한도를 제공</h4>
 
-<p>구글은 2017년 3월 10일 Google Cloud Next 17의 3일째 기조 강연에서 15개 서비스의 영구 무료 쿼터를 발표.</p>
-
-<p>영구 무료 한도 대상 서비스 이름과 월 제한은 다음과 같다(제품에 따라서는 아래 외에도 제한이 있다).</p>
+<p>구글은 2017년 3월 10일 Google Cloud Next 17의 3일째 기조 강연에서 15개 서비스의 영구 무료 쿼터를 발표.
+영구 무료 한도 대상 서비스 이름과 월 제한은 다음과 같다(제품에 따라서는 아래 외에도 제한이 있다).</p>
 
 <ul>
   <li>Google Cloud Engine(미국 지역의 f1-micro 1 인스턴스 및 HDD 30GB)</li>
@@ -156,21 +155,84 @@
   <li>Google Cloud Shell(무제한, 영속 스토리지 5GB 붙음)</li>
 </ul>
 
-<ol>
-  <li>
-    <h6 id="gcp-계정-생성-credit-카드-인증">GCP 계정 생성 (Credit 카드 인증)</h6>
-  </li>
-</ol>
+<h5 id="1-gcp-계정-생성-credit-카드-인증">1. GCP 계정 생성 (Credit 카드 인증)</h5>
 
-<p><a href="https://cloud.google.com/">https://cloud.google.com/</a></p>
-
-<p>1년 $300 크레딧</p>
+<p><a href="">https://cloud.google.com</a>
+1년 $300 크레딧 {: .right}</p>
 
 <ul>
-  <li>프로젝트명 변경 - “프로젝트 설정”</li>
+  <li>
+    <p>프로젝트명 변경 - “프로젝트 설정” 메뉴<br />
+<img src="https://i.postimg.cc/BbzrCxFD/gcp1.png" alt="" /></p>
+  </li>
+  <li>
+    <p>메뉴 고정</p>
+  </li>
 </ul>
+<p class="left">
+<img src="https://i.postimg.cc/SRj08Znk/gcp2.png" width="75%" />
+</p>
 
-<p><img src="https://i.postimg.cc/BbzrCxFD/gcp1.png" style="zoom:75%;" /></p>
+<h5 id="2-평생무료-vm-인스턴스">2. 평생무료 VM 인스턴스</h5>
+
+<p>무료 설정 기준 -  <a href="">https://cloud.google.com/free/docs/gcp-free-tier?hl=ko#always-free-usage-limits</a></p>
+
+<blockquote>
+  <p>리전 : 오리건, 아이오와, 사우스캐롤라이나<br />
+영역 : 리전 선택 후 자유<br />
+머신 : N1 시리즈 f1-micro<br />
+OS : 자유<br />
+부팅디스크 유형 : 표준 영구 디스크 / 30GB</p>
+</blockquote>
+
+<p><img src="https://i.postimg.cc/Kv6XkDxh/gcp3.png" alt="" />
+<img src="https://i.postimg.cc/k4T32rXT/gcp4.png" alt="" /></p>
+
+<h5 id="3-ip-고정">3. IP 고정</h5>
+
+<p>!{width:85%}gcp10.png!</p>
+
+<p>!{width:85%}gcp11.png!</p>
+
+<h5 id="4-ssh-연결">4. SSH 연결</h5>
+
+<p>!{width:85%}gcp20.png!</p>
+
+<p>1) 브라우저 연결</p>
+
+<p>!{width:85%}gcp21.png!</p>
+
+<p>2) SSH 클라이언트 연결</p>
+
+<p>https://cloud.google.com/compute/docs/instances/connecting-advanced#thirdpartytools</p>
+
+<p>2-1) 로컬 - ssh 키 생성
+https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys#createsshkeys</p>
+<pre>
+ssh-keygen -t rsa -f ~/.ssh/키이름 -C "구글 계정"
+</pre>
+
+<p>!gcp15.png!</p>
+
+<p>2-2) 로컬 - ssh 키 복사</p>
+<pre>
+cat ~/.ssh/gcp-rsa.pub
+</pre>
+<p>!gcp16.png!</p>
+
+<p>2-3) 서버 - 메타데이터 SSH 키에 추가</p>
+
+<p>!gcp17.png!</p>
+
+<p>!gcp18.png!</p>
+
+<p>2-4) 로컬 터미널에서 연결</p>
+<pre>
+ssh -i "키파일" "구글 계정 ID"@"VM 외부 IP주소"
+</pre>
+
+<p>!gcp19.png!</p>
+
 
 		
 	</div>
