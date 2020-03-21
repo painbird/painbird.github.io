@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="generator" content="Jekyll">
+
+	<title>GCE Centos8 + Laradock</title>
+  <meta name="description" content="Web App Project.">
+
+	<!-- CSS & fonts -->
+	<link rel="stylesheet" href="/css/main.css">
+
+	<!-- RSS -->
+	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+</head>
+
+
+<body>
+	<div id="wrap">
+	  	
+	  	<!-- Navigation -->
+	  	<nav id="nav">
+	<div id="nav-list">
+		<a href="/">Home</a>
+
+		<!-- Nav pages -->
+	  
+	    
+	  
+	    
+	      <a href="/about" title="About">About</a>
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+    
+    <!-- Nav links -->
+	  <a href="https://github.com/painbird/painbird.github.io/archive/master.zip">Download</a>
+<a href="https://github.com/painbird/painbird.github.io">Project on Github</a>
+
+
+	</div>
+  
+  <!-- Nav footer -->
+	
+	  <footer>
+	
+	<span>version 1.0.0</span>
+
+</footer>
+	
+
+</nav>
+
+    
+    <!-- Icon menu -->
+	  <a id="nav-menu">
+	  	<div id="menu"></div>
+	  </a>
+
+      <!-- Header -->
+      
+        <header id="header" class="parent justify-spaceBetween">
+  <div class="inner w100 relative">
+    <span class="f-left">  
+      <a href="/">
+        <h1>
+          <span>pain</span>bird
+        </h1>
+      </a>
+    </span>
+    <span id="nav-links" class="absolute right bottom">
+      <!-- Nav pages -->
+	    
+	      
+	    
+	      
+	        <a href="/about" title="About">About</a>
+	      
+	    
+	      
+	    
+	      
+	    
+	      
+	    
+	      
+	    
+	      
+	    
+      
+      <!-- Nav links -->
+	    <a href="https://github.com/painbird/painbird.github.io/archive/master.zip">Download</a>
+<a href="https://github.com/painbird/painbird.github.io">Project on Github</a>
+
+
+    </span>
+  </div>
+</header>
+
+
+
+
+      
+
+    <!-- Main content -->
+	  <div id="container">
+		  
+		<main>
+
+			<article id="post-page">
+	<h2>GCE Centos8 + Laradock</h2>		
+	<time datetime="2020-03-17T00:00:00+09:00" class="by-line">17 Mar 2020</time>
+	<div class="content">
+
+		<p>h3. GCE</p>
+
+<p>VM인스턴스</p>
+<pre>
+- 리전 : 도쿄
+- 머신 : N1 / g1-small
+- OS : CentOS 8 / 30GB
+</pre>
+
+<p>!gcp01.png!</p>
+
+<p>고정IP
+!gcp02.png!
+ </p>
+
+<p>리모트 접속 포트</p>
+<pre>
+- nuxt : 8300
+- phpmyadmin : 8301
+- mariadb : 8302
+</pre>
+
+<p>방화벽 규칙 생성 (‘트래픽 방향 - 송신’ 똑같이 생성)
+ex)
+  수신 : apm-receive
+  송신 : apm-send
+!gcp03.png!</p>
+
+<p>VM인스턴스에 네트워크 태그(apm-server) 적용
+!gcp05.png!</p>
+
+<p> </p>
+
+<p>h3. CentOS 설정</p>
+
+<p>1) root 패스워드 설정</p>
+
+<pre>
+sudo passwd
+</pre>
+
+<p>2) locale
+https://www.tecmint.com/fix-failed-to-set-locale-defaulting-to-c-utf-8-in-centos/
+ </p>
+
+<p>3) Time</p>
+
+<pre>
+# sudo mv /etc/localtime /etc/localtime_org
+# sudo ln -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+</pre>
+<p> </p>
+
+<p>h3. Docker</p>
+
+<p>https://docs.docker.com/install/linux/docker-ce/centos/</p>
+
+<pre>
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+sudo yum install docker-ce docker-ce-cli containerd.io
+</pre>
+
+<p>    containerd.io 에러 나면</p>
+<pre>
+sudo dnf install https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm
+
+sudo yum install docker-ce docker-ce-cli
+</pre>
+
+<pre>
+sudo usermod -aG docker $USER
+</pre>
+
+<p>    exit &amp; 재접속 —-</p>
+
+<pre>
+sudo systemctl start docker
+
+sudo systemctl enable docker
+</pre>
+<p> </p>
+
+<p>h3. Compose</p>
+
+<p>https://docs.docker.com/compose/install/</p>
+
+<p>버전 확인)
+  https://github.com/docker/compose/releases</p>
+
+<p>2020.03.18 stable)</p>
+
+<pre>
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+</pre>
+
+<p>2020.03.18 최신)</p>
+
+<pre>
+sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0-rc3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+</pre>
+
+<pre>
+sudo chmod +x /usr/local/bin/docker-compose
+</pre>
+<p> </p>
+
+<p>h3. Laradock</p>
+
+<pre>
+sudo yum install git
+
+git clone https://github.com/laradock/laradock.git
+
+mkdir data
+
+mkdir src
+
+cd laradock
+
+cp env-example .env
+</pre>
+
+<p>.env)</p>
+<pre>
+APP_CODE_PATH_HOST=../src
+
+DATA_PATH_HOST=../data
+
+PHP_VERSION=7.4
+
+DOCKER_HOST_IP={ VM인스턴스 고정IP }
+
+MARIADB_PORT=8302
+</pre>
+
+<p>docker-compose.yml)</p>
+<pre>
+### Workspace Utilities ##################################
+    workspace:
+
+      ports:
+        - "${WORKSPACE_SSH_PORT}:22"
+        - "${WORKSPACE_VUE_CLI_SERVE_HOST_PORT}:8080"
+        - "${WORKSPACE_VUE_CLI_UI_HOST_PORT}:8000"
+        - "8300:8300"
+
+
+### MariaDB ##############################################
+    mariadb:
+      
+      ports:
+        - "${MARIADB_PORT}:8302"
+</pre>
+
+<p>mariadb/my.cnf)</p>
+<pre>
+[mysqld]
+port=8302
+bind-address=0.0.0.0
+</pre>
+
+<p>nginx/sites/default.conf)</p>
+<pre>
+  server_name laravel;
+  root /var/www/laravel/public;
+</pre>
+
+<p>h3. DB 원격 접속</p>
+
+<p>laradock 기본 설정 db계정
+   user : default
+   passwd : secret</p>
+
+<p>!gcp06.png!</p>
+
+<p>윈도우 툴)
+https://www.heidisql.com/
+!https://www.heidisql.com/images/screenshots/connection.png!
+ </p>
+
+<p>h3. Project 생성</p>
+
+<p>docker-compose up -d nginx mariadb</p>
+
+<p>docker-compose exec –user=laradock workspace bash</p>
+
+<p>laravel 프로젝트</p>
+<pre>
+composer create-project --prefer-dist laravel/laravel laravel
+cd laravel
+</pre>
+
+<p>.env 수정</p>
+<pre>
+DB_CONNECTION=mysql
+DB_HOST=mariadb
+DB_PORT=8302
+DB_DATABASE=default
+DB_USERNAME=default
+DB_PASSWORD=secret
+</pre>
+
+<pre>
+npm install &amp;&amp; npm run dev
+</pre>
+
+<p>nuxtjs 프로젝트 생성
+https://ko.nuxtjs.org/guide/installation</p>
+
+<pre>
+cd /var/www/
+npx create-nuxt-app nuxtjs
+</pre>
+
+<p>package.json 수정</p>
+<pre>
+"scripts": {
+    "dev": "nuxt",
+
+  수정)
+    "dev": "HOST=0.0.0.0 PORT=8300 nuxt",
+</pre>
+
+<p>nuxt실행</p>
+<pre>
+npm run dev
+</pre>
+<p> </p>
+
+<p>h3. Nginx &amp; SSL 설정
+ </p>
+
+		
+	</div>
+</article>
+
+
+
+	  </main>
+		
+		  <!-- Pagination links -->
+      
+
+	  </div>
+	    
+	    <!-- Footer -->
+	    <footer><span>@2020 - Painbird</span></footer>
+
+
+	    <!-- Script -->
+      <script src="/js/main.js"></script>	
+
+
+	</div>
+</body>
+</html>

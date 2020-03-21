@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<meta name="generator" content="Jekyll">
 
-	<title>This is the sixth test post.</title>
-  <meta name="description" content="This is the sixth test post.">
+	<title>Docker</title>
+  <meta name="description" content="Web App Project.">
 
 	<!-- CSS & fonts -->
 	<link rel="stylesheet" href="/css/main.css">
@@ -36,8 +36,6 @@
 	  
 	    
 	      <a href="/about" title="About">About</a>
-	    
-	  
 	    
 	  
 	    
@@ -105,8 +103,6 @@
 	    
 	      
 	    
-	      
-	    
       
       <!-- Nav links -->
 	    <a href="https://github.com/painbird/painbird.github.io/archive/master.zip">Download</a>
@@ -128,13 +124,70 @@
 		<main>
 
 			<article id="post-page">
-	<h2>Test Post 6</h2>		
-	<time datetime="2017-02-11T00:00:00+09:00" class="by-line">11 Feb 2017</time>
+	<h2>Docker</h2>		
+	<time datetime="2020-03-03T00:00:00+09:00" class="by-line">03 Mar 2020</time>
 	<div class="content">
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt blanditiis cum dolore beatae facilis molestias ut a doloribus recusandae delectus, repudiandae, rerum quo eaque quaerat enim dolores perspiciatis voluptatum odio accusamus! Doloribus fuga provident, magni eaque consequatur quia incidunt similique. Nostrum animi facere mollitia, corrupti vitae, itaque maiores consequatur, explicabo, sapiente molestiae consequuntur! Aliquam hic dolorum atque dolorem repudiandae nostrum optio praesentium quisquam vero. Nostrum illum modi aut, ratione qui! Quas laudantium, soluta asperiores minima molestiae similique consequatur ut.</p>
+		<ul>
+  <li>
+    <p>docker 설치 (MacOs 10.13 이상 / Windows10 Pro)
+https://www.docker.com/products/docker-desktop</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ad tenetur, numquam aliquid excepturi fuga. Pariatur numquam rem possimus, optio voluptate aspernatur ex, ipsum tenetur earum molestiae nulla suscipit sequi labore fugit repudiandae natus? Nam vel rem, rerum maxime harum. Molestias suscipit quaerat molestiae dolores fuga earum modi, distinctio repellat, laborum commodi quibusdam ex dolore, eius maiores architecto necessitatibus. Repellendus a vitae, est nesciunt. Aspernatur fugiat labore cumque, optio, magni, aperiam ut totam error eligendi iure culpa illum dolorum quam?</p>
+    <p>참고)
+  https://luckygg.tistory.com/165
+  https://blog.thereis.xyz/51</p>
+
+    <p>Windows7,10 Home) Docker Toolbox 설치
+  https://github.com/docker/toolbox/releases
+  https://docs.docker.com/toolbox/toolbox_install_windows/
+  https://gwonsungjun.github.io/articles/2018-01/DockerInstall</p>
+  </li>
+  <li>
+    <p>도커 이미지 확인</p>
+  </li>
+</ul>
+<pre>
+docker images
+</pre>
+
+<ul>
+  <li>구동중인 모든 도커 컨테이너들을 중지시키고, 삭제</li>
+</ul>
+<pre>
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+</pre>
+
+<ul>
+  <li>모든 도커 이미지 삭제(remove all docker images)</li>
+</ul>
+<pre>
+docker rmi $(docker images -q) 
+</pre>
+
+<ul>
+  <li>DB컨테이너 재빌드</li>
+</ul>
+<pre>
+rm -rf ../data/mariadb
+docker rmi laradock_mariadb -f 
+docker rmi mariadb -f
+docker-compose build --no-cache mariadb
+</pre>
+
+<ul>
+  <li>모든 이미지 압축 저장</li>
+</ul>
+<pre>
+docker save $(docker image ls -q) | gzip &gt; 파일명.tar.gz
+</pre>
+
+<ul>
+  <li>이미지 로드</li>
+</ul>
+<pre>
+docker load &lt; 파일명.tar.gz
+</pre>
 
 		
 	</div>
