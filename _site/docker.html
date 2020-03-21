@@ -128,66 +128,61 @@
 	<time datetime="2020-03-03T00:00:00+09:00" class="by-line">03 Mar 2020</time>
 	<div class="content">
 
-		<ul>
-  <li>
-    <p>docker 설치 (MacOs 10.13 이상 / Windows10 Pro)
-https://www.docker.com/products/docker-desktop</p>
-
-    <p>참고)
-  https://luckygg.tistory.com/165
-  https://blog.thereis.xyz/51</p>
-
-    <p>Windows7,10 Home) Docker Toolbox 설치
-  https://github.com/docker/toolbox/releases
-  https://docs.docker.com/toolbox/toolbox_install_windows/
-  https://gwonsungjun.github.io/articles/2018-01/DockerInstall</p>
-  </li>
-  <li>
-    <p>도커 이미지 확인</p>
-  </li>
-</ul>
-<pre>
-docker images
-</pre>
+		
+<h4 id="docker-설치">docker 설치</h4>
 
 <ul>
-  <li>구동중인 모든 도커 컨테이너들을 중지시키고, 삭제</li>
+  <li>
+    <p>MacOs 10.13 이상 / Windows10 Pro<br />
+<a href="https://www.docker.com/products/docker-desktop" target="_blank">https://www.docker.com/products/docker-desktop</a> 
+<a href="https://luckygg.tistory.com/165" target="_blank">https://luckygg.tistory.com/165</a> 
+<a href="https://blog.thereis.xyz/51" target="_blank">https://blog.thereis.xyz/51</a></p>
+  </li>
+  <li>
+    <p>Windows7/10 Home
+<a href="https://github.com/docker/toolbox/releases" target="_blank">https://github.com/docker/toolbox/releases</a><br />
+<a href="https://docs.docker.com/toolbox/toolbox_install_windows/" target="_blank">https://docs.docker.com/toolbox/toolbox_install_windows/</a><br />
+<a href="https://gwonsungjun.github.io/articles/2018-01/DockerInstall" target="_blank">https://gwonsungjun.github.io/articles/2018-01/DockerInstall</a></p>
+  </li>
 </ul>
-<pre>
-docker stop $(docker ps -a -q)
+
+<p><strong>도커 이미지 확인</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker images
+</code></pre></div></div>
+
+<h4 id="구동중인-모든-도커-컨테이너들을-중지시키고-삭제">구동중인 모든 도커 컨테이너들을 중지시키고, 삭제</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
-</pre>
+</code></pre></div></div>
 
-<ul>
-  <li>모든 도커 이미지 삭제(remove all docker images)</li>
-</ul>
-<pre>
-docker rmi $(docker images -q) 
-</pre>
+<h4 id="모든-도커-이미지-삭제remove-all-docker-images">모든 도커 이미지 삭제(remove all docker images)</h4>
 
-<ul>
-  <li>DB컨테이너 재빌드</li>
-</ul>
-<pre>
-rm -rf ../data/mariadb
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker rmi $(docker images -q) 
+</code></pre></div></div>
+
+<h4 id="db컨테이너-재빌드">DB컨테이너 재빌드</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm -rf ../data/mariadb
 docker rmi laradock_mariadb -f 
 docker rmi mariadb -f
 docker-compose build --no-cache mariadb
-</pre>
+</code></pre></div></div>
 
-<ul>
-  <li>모든 이미지 압축 저장</li>
-</ul>
-<pre>
-docker save $(docker image ls -q) | gzip &gt; 파일명.tar.gz
-</pre>
+<h4 id="모든-이미지-압축-저장">모든 이미지 압축 저장</h4>
 
-<ul>
-  <li>이미지 로드</li>
-</ul>
-<pre>
-docker load &lt; 파일명.tar.gz
-</pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker save $(docker image ls -q) | gzip &gt; 파일명.tar.gz
+</code></pre></div></div>
+
+<h4 id="이미지-로드">이미지 로드</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker load &lt; 파일명.tar.gz
+</code></pre></div></div>
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTA4NjQ0ODQxMCw0NzE0MDc4MThdfQ==
+-->
 
 		
 	</div>
