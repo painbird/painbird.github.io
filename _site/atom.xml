@@ -4,22 +4,12 @@
  <title>Painbird | A Dev log</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <id>http://localhost:4000</id>
- <updated>2020-03-21T14:40:34+09:00</updated>
+ <updated>2020-03-21T14:49:32+09:00</updated>
  <author>
    <name>HyeongJin</name>
    <uri>https://painbird.github.io</uri>
    <email>painbirdz@gmail.com</email>
  </author>
-
- 
-
- <entry>
-   <title>Laradock + Laravel</title>
-   <link href="http://localhost:4000/laradock-01"/>
-   <id>http://localhost:4000/laradock-01</id>
-   <updated>2020-03-21T00:00:00+09:00</updated>
-   <content type="html">&lt;ol&gt; &lt;li&gt;docker 설치 (MacOs 10.13 이상 / Windows10 Pro) https://www.docker.com/products/docker-desktop&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;참고) https://luckygg.tistory.com/165 https://blog.thereis.xyz/51&lt;/p&gt; &lt;p&gt;Windows7,10 Home) Docker Toolbox 설치 https://github.com/docker/toolbox/releases https://docs.docker.com/toolbox/toolbox_install_windows/ https://gwonsungjun.github.io/articles/2018-01/DockerInstall&lt;/p&gt; &lt;p&gt; &lt;/p&gt; &lt;ol&gt; &lt;li&gt;laradock 다운로드 http://laradock.io&lt;/li&gt; &lt;/ol&gt; &lt;pre&gt; git) git clone https://github.com/laradock/laradock.git or 다운로드) https://github.com/laradock/laradock/releases &lt;/pre&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;폴더구성 예) ├── laradock (다운받은폴더) ├── data (database폴더 작성) └──...</content>
- </entry>
 
  
 
